@@ -119,3 +119,8 @@ resetBtn.addEventListener("click", () => {
 
 // 초기 표시
 updateDisplay();
+
+document.body.addEventListener("click", () => {
+  playBeep();
+  console.log("beep test");
+}, { once: true });
